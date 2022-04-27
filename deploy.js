@@ -4,7 +4,7 @@ const { token, clientId } = require('./settings.json');
 const fs = require('node:fs');
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-const guildId = '940017227590172673';
+const guildId = ''; //Removed for security reasons. fill this value with your guilds ID
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
